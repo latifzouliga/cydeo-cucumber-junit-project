@@ -1,6 +1,7 @@
 Feature: Cucumber Data Tables implementation practice
 
 
+  @smoke
   Scenario: List of fruits and vegetables I like
     Then user should see bellow list
       | orange     |
@@ -27,7 +28,7 @@ Feature: Cucumber Data Tables implementation practice
       | green  |
       | cyan   |
 
-  @list
+
   Scenario: List of the pets they love
     Then I will share their favorites
 
@@ -38,7 +39,7 @@ Feature: Cucumber Data Tables implementation practice
       | Ragdoll cat      |
       | Siberian cat     |
 
-  @map
+
   Scenario: Office reads data about driver
     Then officer is able to see any data he wants
 

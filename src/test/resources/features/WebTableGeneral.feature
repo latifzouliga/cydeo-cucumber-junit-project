@@ -1,7 +1,7 @@
-@webtableorder
+
 Feature: Some of the general functionality verifications
 
-  @options @table
+
   Scenario: Dropdown options verification
     Given user is already logged in to The Web table app
     When user is on the Order page
@@ -11,26 +11,26 @@ Feature: Some of the general functionality verifications
       | Screenable |
 
 
-  @card
+
   Scenario: Order place scenario
     Given user is already logged in to The Web table app
     When user is on the Order page
     Then user sees Visa radio button is enabled
 
-  @card
+
   Scenario: Order place scenario
     Given user is already logged in to The Web table app
     When user is on the Order page
     Then user sees Mastercard radio button is enabled
 
-  @card
+
   Scenario: Order place scenario
     Given user is already logged in to The Web table app
     When user is on the Order page
     Then user sees American Express radio button is enabled
 
 
-  @placement
+
   Scenario: Order placement scenario
     Given user is already logged in to The Web table app
     When user is on the Order page
@@ -52,7 +52,7 @@ Feature: Some of the general functionality verifications
     And user clicks to Process Order
     Then user should see "karim MM" in the table on View all orders
 
-  @placement
+
   Scenario: Order placement scenario
     Given user is already logged in to The Web table app
     When user is on the Order page And user enters quantity "2"
@@ -67,7 +67,7 @@ Feature: Some of the general functionality verifications
     And user clicks to process order button
     Then user should see "Jane Doe" in the first row of the web table I
 
-  @outline1
+
   Scenario Outline: Order placement scenario
     Given user is already logged in to The Web table app
     When user is on the Order page And user enters quantity "<Quantity>"
@@ -97,7 +97,7 @@ Feature: Some of the general functionality verifications
     Then user click delete selected button
     Then user should see the order disappear from the table
 
-  @delete
+
   Scenario: Delete all orders
     Given user is already logged in to The Web table app
     When user select all orders from the table

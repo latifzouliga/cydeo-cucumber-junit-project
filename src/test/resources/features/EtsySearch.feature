@@ -3,7 +3,7 @@
 Feature: Etsy search functionality
   Agile Story: User should be able to type any keyword and see relevant information
 
-
+# TODO implement me (Etsy)
   Scenario: Etsy title verification
     Given user is on the Etsy homepage
     Then user should see title as expected

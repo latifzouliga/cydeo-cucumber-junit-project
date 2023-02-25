@@ -1,5 +1,5 @@
 
-@google
+
 Feature: Google search function
 
   Scenario: As a user I want to search for a product and get relevant result

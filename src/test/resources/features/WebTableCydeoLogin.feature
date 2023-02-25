@@ -1,4 +1,4 @@
-@table
+
 Feature: Login functionality
 
   Agile story: User should be able to login with correct credentials
@@ -24,7 +24,7 @@ Feature: Login functionality
     And user click login button
     Then user see url ends with order
 
-    @map
+
   Scenario: : Login scenario valid credential
     Given user on login page
     When user enter valid credential
@@ -40,7 +40,7 @@ Feature: Login functionality
   #TRY TO CREATE YOURSELF FOR THE PRACTICE.
 
 
-  @invalid
+
   Scenario Outline: : Login scenario invalid credential
     Given user on login page
     When user enter invalid credentials "<username>" "<password>"

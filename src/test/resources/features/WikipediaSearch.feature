@@ -1,4 +1,4 @@
-@wip
+
 Feature: Wikipedia Search Functionality
 
 
@@ -23,7 +23,7 @@ Feature: Wikipedia Search Functionality
     Then User sees "Steve Jobs" is in the image header
   #Note: Follow POM
 
-  @outline
+
   Scenario Outline: Wikipedia Search Functionality with scenario outline
     Given User is on Wikipedia home page
     When User types "<Search Value>" in the wiki search box.
