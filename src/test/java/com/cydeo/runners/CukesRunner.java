@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)                             // turns the class into runnable class
 @CucumberOptions(   //
         plugin = {
+                "json:target/cucumber.json",
                 "html:target/cucumber-reports.html", // html report for passed and failed Tests
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
                 "rerun:target/rerun.txt"             // storing tailed text for rerun
