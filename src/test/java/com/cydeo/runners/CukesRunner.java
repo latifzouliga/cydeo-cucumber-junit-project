@@ -23,11 +23,3 @@ public class CukesRunner { /** Run Me */
 }           // trigger button
 
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        features = "@target/rerun.txt",              // pointing to directly to rerun.txt
-        glue = "com/cydeo/step_definitions"
-)
-class FailedTestRunner {
-}                              // its job to run failed tests only
-
