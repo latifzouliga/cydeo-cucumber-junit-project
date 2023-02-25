@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Bing search functionality
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.07 s - in Bing search functionality

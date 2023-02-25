@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Some of the general functionality verifications
--------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 87.49 s - in Some of the general functionality verifications
