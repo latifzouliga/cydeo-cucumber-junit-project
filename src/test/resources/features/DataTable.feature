@@ -1,7 +1,9 @@
+
+@dropdown
 Feature: Cucumber Data Tables implementation practice
 
 
-  @smoke
+
   Scenario: List of fruits and vegetables I like
     Then user should see bellow list
       | orange     |

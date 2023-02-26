@@ -21,23 +21,10 @@ public class Dropdown_stepDefinitions {
     @Then("User should see below info in month dropdown")
     public void user_should_see_below_info_in_month_dropdown(List<String> months) {
 
-
         List<String> list = BrowserUtil.dropdownOptions_as_STRING(dropDownsPage.monthsDropDown);
         Assert.assertEquals(months, list);
         System.out.println(list);
 
-
-        /*
-        int k = 0;
-        for (WebElement each : options) {
-
-            System.out.println(each.getText() + " : " + months.get(k));
-            //
-            Assert.assertEquals(months.get(k), each.getText());
-            k++;
-        }
-
-         */
     }
 
 }
