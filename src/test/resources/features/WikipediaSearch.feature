@@ -1,8 +1,8 @@
-
+@outline
 Feature: Wikipedia Search Functionality
 
 
-  @outline
+
   Scenario: Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
     When User types "Steve Jobs" in the wiki search box.
