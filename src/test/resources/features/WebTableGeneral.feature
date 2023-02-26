@@ -1,4 +1,3 @@
-
 Feature: Some of the general functionality verifications
 
 
@@ -9,7 +8,6 @@ Feature: Some of the general functionality verifications
       | MoneyCog   |
       | Familybea  |
       | Screenable |
-
 
 
   Scenario: Order place scenario
@@ -28,7 +26,6 @@ Feature: Some of the general functionality verifications
     Given user is already logged in to The Web table app
     When user is on the Order page
     Then user sees American Express radio button is enabled
-
 
 
   Scenario: Order placement scenario
@@ -85,14 +82,13 @@ Feature: Some of the general functionality verifications
     Examples:
 
       | Quantity | Customer Name | Street         | City        | State | Zip Code | Card Type        | Card Number   | Expiry Date | Expected Name |
-      | 12       | Latif         | 3454 Hi Street | Morgan town | Pa    | 23223    | MasterCard       | 2343423423423 | 23/32       | Latif        |
+      | 12       | Ahmed         | 3454 Hi Street | Morgan town | Pa    | 23223    | MasterCard       | 2343423423423 | 23/32       | Ahmed         |
       | 23       | Abdellatif    | Amigo Dr       | Hello City  | CA    | 65222    | American Express | 234234234234  | 12/23       | Abdellatif    |
       | 400      | Ahlam         | Amigo Dr       | Hello City  | CA    | 65222    | Visa             | 234234234234  | 12/23       | Ahlam         |
 
 
-
   Scenario: Delete an order
-  Given user is already logged in to The Web table app
+    Given user is already logged in to The Web table app
     When user select an "Bob Martin" from the table
     Then user click delete selected button
     Then user should see the order disappear from the table
