@@ -34,11 +34,13 @@ public class WikipediaSearch_stepDefinitions {
 
     @Then("User clicks wiki search button")
     public void user_clicks_wiki_search_button() {
+        BrowserUtil.sleep(1);
         searchPage.btn_search.click();
     }
 
     @Then("User sees {string} is in the wiki title")
     public void user_sees_steve_jobs_is_in_the_wiki_title(String string) {
+        BrowserUtil.sleep(1);
         wait.until(ExpectedConditions.titleContains(string));
         BrowserUtil.verifyTitleContains(string);
 
@@ -48,6 +50,7 @@ public class WikipediaSearch_stepDefinitions {
 
     @Then("User sees {string} is in the main header")
     public void user_sees_steve_jobs_is_in_the_main_header(String string) {
+        BrowserUtil.sleep(1);
         wait.until(ExpectedConditions.titleContains(string));
         Assert.assertEquals(resultPage.mainHeader.getText(),string);
 /*
@@ -64,6 +67,7 @@ public class WikipediaSearch_stepDefinitions {
 
     @Then("User sees {string} is in the image header")
     public void user_sees_steve_jobs_is_in_the_image_header(String string) {
+        BrowserUtil.sleep(1);
         wait.until(ExpectedConditions.titleContains(string));
         Assert.assertTrue(resultPage.imageHeader.getText().contains(string));
     }
