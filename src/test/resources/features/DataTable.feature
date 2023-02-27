@@ -30,7 +30,7 @@ Feature: Cucumber Data Tables implementation practice
       | green  |
       | cyan   |
 
-
+ @pets
   Scenario: List of the pets they love
     Then I will share their favorites
 

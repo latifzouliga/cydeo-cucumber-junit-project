@@ -107,7 +107,9 @@ public class WebTableOrder_stepDefinitions {
 
     @Then("user clicks to the calculate button And user enters customer name {string}")
     public void user_clicks_to_the_calculate_button_and_user_enters_customer_name(String string) {
+        BrowserUtil.sleep(2);
         orderPage.btn_calculate.click();
+        BrowserUtil.sleep(2);
         orderPage.txt_CustomerName.sendKeys(string);
     }
 
