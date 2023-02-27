@@ -27,7 +27,7 @@ public class DataTables_stepDefinitions {
 
     @Then("I will share their favorites")
     public void i_will_share_their_favorites(List<String> pets) {
-        System.out.println(pets); //
+        System.out.println(pets);
     }
 
     @Then("officer is able to see any data he wants")
