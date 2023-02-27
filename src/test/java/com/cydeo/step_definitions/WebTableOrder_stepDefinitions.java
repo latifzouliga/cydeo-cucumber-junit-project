@@ -24,7 +24,6 @@ public class WebTableOrder_stepDefinitions {
 
     @Given("user is already logged in to The Web table app")
     public void user_is_already_logged_in_to_the_web_table_app() {
-
         Driver.getDriver().get("https://web-table-2.cydeo.com/login");
         loginPage.login();
     }
