@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",    // looking for Scenarios in feature folder
         glue = "com/cydeo/step_definitions",         // looking for implementation of feature files in step defs folder
-        tags = "@dropdown",
+        tags = "",
         // specifying which test(s) needs to be run
         publish = true,                              // generating a link for sharing html report
         dryRun = false                               // generating snippets when we change the value to true
