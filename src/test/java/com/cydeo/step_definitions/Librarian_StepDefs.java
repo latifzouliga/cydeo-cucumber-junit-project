@@ -9,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.Select;
 
 public class Librarian_StepDefs {
 
@@ -44,6 +45,7 @@ public class Librarian_StepDefs {
     @When("the librarian clicks to save changes")
     public void the_librarian_clicks_to_save_changes() {
         userPage.buttonSaveChanges.click();
+
     }
     @Then("verify {string} message is displayed")
     public void verify_message_is_displayed(String expectedMessage) {
@@ -57,6 +59,7 @@ public class Librarian_StepDefs {
         userPage.logout.click();
         BrowserUtil.sleep(4);
         loginPage.login(userName, password);
+
 
     }
     @Then("verify created user should be able to see {string}")
